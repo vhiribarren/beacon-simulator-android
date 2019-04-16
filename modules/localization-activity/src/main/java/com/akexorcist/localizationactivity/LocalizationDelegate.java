@@ -11,6 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+/* According to the Apache license, please be warned that this file was modified in order
+ * to be integrated in the Beacon Simulator project. */
+
 /**
  * Created by Aleksander Mielczarek on 03.04.2016.
  */

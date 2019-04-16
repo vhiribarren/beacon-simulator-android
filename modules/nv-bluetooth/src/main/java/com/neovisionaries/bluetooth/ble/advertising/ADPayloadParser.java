@@ -13,6 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+
+/* According to the Apache license, please be warned that this file was modified in order
+ * to be integrated in the Beacon Simulator project. */
+
 package com.neovisionaries.bluetooth.ble.advertising;
 
 

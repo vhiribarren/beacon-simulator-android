@@ -1,3 +1,7 @@
+/* According to the Apache license, please be warned that this file was modified in order
+ * to be integrated in the Beacon Simulator project. */
+
+
 apply plugin: 'com.android.library'
 
 
