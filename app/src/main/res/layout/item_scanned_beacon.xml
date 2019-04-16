@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2016, 2017, 2019 Vincent Hiribarren
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+
+Linking Beacon Simulator statically or dynamically with other modules is making
+a combined work based on Beacon Simulator. Thus, the terms and conditions of
+the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of Beacon Simulator give you
+permission to combine Beacon Simulator program with free software programs
+or libraries that are released under the GNU LGPL and with independent
+modules that communicate with Beacon Simulator solely through the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces. You may
+copy and distribute such a system following the terms of the GNU GPL for
+Beacon Simulator and the licenses of the other code concerned, provided that
+you include the source code of that other code when and as the GNU GPL
+requires distribution of source code and provided that you do not modify the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces.
+
+The intent of this license exception and interface is to allow Bluetooth low energy
+closed or proprietary advertise data packet structures and contents to be sensibly
+kept closed, while ensuring the GPL is applied. This is done by using an interface
+which only purpose is to generate android.bluetooth.le.AdvertiseData objects.
+
+This exception is an additional permission under section 7 of the GNU General
+Public License, version 3 (“GPLv3”).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@android:color/white"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:contentDescription="@string/all_beacon_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scannedbeacon_imageview_type"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="6dp"
+        android:paddingBottom="2dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:transitionName="macAddress"
+            android:id="@+id/scannedbeacon_textview_mac"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scannedbeacon_textview_specific"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scannedbeacon_textview_specificsub"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/all_rssi"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/scannedbeacon_textview_rssi"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</LinearLayout>

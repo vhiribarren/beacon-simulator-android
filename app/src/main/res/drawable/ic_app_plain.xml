@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2016, 2017, 2019 Vincent Hiribarren
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+
+Linking Beacon Simulator statically or dynamically with other modules is making
+a combined work based on Beacon Simulator. Thus, the terms and conditions of
+the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of Beacon Simulator give you
+permission to combine Beacon Simulator program with free software programs
+or libraries that are released under the GNU LGPL and with independent
+modules that communicate with Beacon Simulator solely through the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces. You may
+copy and distribute such a system following the terms of the GNU GPL for
+Beacon Simulator and the licenses of the other code concerned, provided that
+you include the source code of that other code when and as the GNU GPL
+requires distribution of source code and provided that you do not modify the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces.
+
+The intent of this license exception and interface is to allow Bluetooth low energy
+closed or proprietary advertise data packet structures and contents to be sensibly
+kept closed, while ensuring the GPL is applied. This is done by using an interface
+which only purpose is to generate android.bluetooth.le.AdvertiseData objects.
+
+This exception is an additional permission under section 7 of the GNU General
+Public License, version 3 (“GPLv3”).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.98000004"
+        android:pathData="M28.5997,19.9425 C27.049,18.368,24.5176,18.3487,22.9431,19.8995
+C21.3685,21.4503,21.3492,23.9816,22.9,25.5562
+C24.4508,27.1307,26.9822,27.15,28.5567,25.5992
+C30.1313,24.0484,30.1505,21.5171,28.5997,19.9425 Z M34.1704,31.2989
+C38.894,26.6466,38.9518,19.0525,34.2995,14.3289
+C29.6471,9.60521,22.053,9.54745,17.3294,14.1998
+C14.739,17.4152,18.2997,18.8718,20.1362,17.0496
+C23.2853,13.9481,28.348,13.9866,31.4496,17.1357
+C34.5511,20.2848,34.5126,25.3475,31.3635,28.4491
+C29.3509,29.2356,31.485,33.5441,34.1704,31.2989 Z M39.9992,8.7152
+C32.2453,0.84247,19.5884,0.74619,11.7157,8.50006
+C9.08316,11.0929,7.32503,14.235,6.44051,17.5642
+C5.77035,19.6567,10.3023,18.603,10.3023,18.603
+C11.0103,15.9389,12.4171,13.4235,14.5225,11.3499
+C20.8207,5.14678,30.9461,5.22376,37.1492,11.5219
+C43.3523,17.8201,43.2753,27.9456,36.9771,34.1487
+C34.8718,36.2223,32.3352,37.5907,29.6599,38.259 L30.6398,42.1362
+C33.9829,41.3015,37.1514,39.5914,39.784,36.9986
+C47.6567,29.2447,47.746,16.5807,39.9991,8.7151 Z" />
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.98"
+        android:pathData="M20.996,15.3038 L4.8603,15.1811 L3.43537,16.5845 L14.0803,27.3926 L1.1123,27.294
+L1.08186,31.2961 L16.8782,31.4162 L16.758,47.2125 L20.7601,47.243
+L20.8588,34.275 L31.5037,45.0831 L32.9286,43.6797 L33.0513,27.544
+L20.9107,27.4446 L20.996,15.3038 Z M11.6603,19.2352 L16.9776,19.2756
+L16.9301,24.5858 L11.6603,19.2352 Z M29.0259,31.5086 L28.9785,36.8188
+L23.7016,31.4611 L29.0259,31.5086 Z" />
+</vector>

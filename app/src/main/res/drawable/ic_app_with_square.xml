@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright (c) 2016, 2017, 2019 Vincent Hiribarren
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+
+Linking Beacon Simulator statically or dynamically with other modules is making
+a combined work based on Beacon Simulator. Thus, the terms and conditions of
+the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of Beacon Simulator give you
+permission to combine Beacon Simulator program with free software programs
+or libraries that are released under the GNU LGPL and with independent
+modules that communicate with Beacon Simulator solely through the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces. You may
+copy and distribute such a system following the terms of the GNU GPL for
+Beacon Simulator and the licenses of the other code concerned, provided that
+you include the source code of that other code when and as the GNU GPL
+requires distribution of source code and provided that you do not modify the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces.
+
+The intent of this license exception and interface is to allow Bluetooth low energy
+closed or proprietary advertise data packet structures and contents to be sensibly
+kept closed, while ensuring the GPL is applied. This is done by using an interface
+which only purpose is to generate android.bluetooth.le.AdvertiseData objects.
+
+This exception is an additional permission under section 7 of the GNU General
+Public License, version 3 (“GPLv3”).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="51"
+    android:viewportHeight="51">
+
+    <group
+        android:translateX="2"
+        android:translateY="0">
+
+    <path
+        android:fillColor="#00b9c2"
+        android:fillAlpha="0.97000002"
+        android:strokeAlpha="0.97000002"
+        android:strokeWidth="1.03266418"
+        android:strokeLineJoin="round"
+        android:strokeLineCap="round"
+        android:pathData="M4.49089,-0.187025 L41.882,-0.187025
+C45.4877,-0.187025,48.3905,2.71577,48.3905,6.32146 L48.3905,43.7126
+C48.3905,47.3183,45.4877,50.2211,41.882,50.2211 L4.4909,50.2211
+C0.8852,50.2211,-2.01757,47.3183,-2.01757,43.7126 L-2.01757,6.3215
+C-2.01757,2.7158,0.88521,-0.18699,4.4909,-0.18699 Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.98"
+        android:strokeColor="#ffffff"
+        android:strokeAlpha="0.98"
+        android:pathData="M28.2946,19.9425 C26.7438,18.368,24.2125,18.3487,22.6379,19.8995
+C21.0634,21.4503,21.0441,23.9816,22.5949,25.5562
+C24.1457,27.1307,26.677,27.15,28.2516,25.5992
+C29.8261,24.0484,29.8454,21.5171,28.2946,19.9425 Z M33.8653,31.2989
+C38.5889,26.6466,38.6467,19.0525,33.9943,14.3289
+C29.342,9.60523,21.7479,9.54747,17.0243,14.1998
+C14.4339,17.4152,17.9945,18.8718,19.8311,17.0496
+C22.9802,13.9481,28.0429,13.9866,31.1445,17.1357
+C34.246,20.2848,34.2075,25.3475,31.0584,28.4491
+C29.0458,29.2357,31.1798,33.5441,33.8653,31.2989 Z M39.694,8.7152
+C31.9402,0.84247,19.2833,0.7462,11.4106,8.50007
+C8.77804,11.0929,7.01991,14.2351,6.13546,17.5642
+C5.46531,19.6567,9.99735,18.603,9.99735,18.603
+C10.7053,15.939,12.1121,13.4235,14.2175,11.35
+C20.5156,5.14687,30.6412,5.22392,36.8443,11.5221
+C43.0474,17.8203,42.9703,27.9458,36.6722,34.1489
+C34.5668,36.2224,32.0302,37.5909,29.3549,38.2591 L30.3348,42.1363
+C33.6779,41.3017,36.8465,39.5916,39.4791,36.9988
+C47.3518,29.2449,47.441,16.581,39.6942,8.7153 Z" />
+    <path
+        android:fillColor="#ffffff"
+        android:fillAlpha="0.98"
+        android:strokeColor="#ffffff"
+        android:strokeAlpha="0.98"
+        android:pathData="M20.996,15.3038 L4.8603,15.1811 L3.43537,16.5845 L14.0803,27.3926 L1.1123,27.294
+L1.08186,31.2961 L16.8782,31.4162 L16.758,47.2125 L20.7601,47.243
+L20.8588,34.275 L31.5037,45.0831 L32.9286,43.6797 L33.0513,27.544
+L20.9107,27.4446 L20.996,15.3038 Z M11.6603,19.2352 L16.9776,19.2756
+L16.9301,24.5858 L11.6603,19.2352 Z M29.0259,31.5086 L28.9785,36.8188
+L23.7016,31.4611 L29.0259,31.5086 Z" />
+
+    </group>
+</vector>

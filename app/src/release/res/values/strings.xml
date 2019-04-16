@@ -1,0 +1,4 @@
+<!--suppress XmlUnboundNsPrefix -->
+<resources>
+    <string name="app_name" translatable="false">Beacon Simulator Community</string>
+</resources>

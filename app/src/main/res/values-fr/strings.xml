@@ -1,0 +1,204 @@
+<!--
+Copyright (c) 2016, 2017, 2019 Vincent Hiribarren
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 3 of the License, or (at your option) any later
+version.
+
+Linking Beacon Simulator statically or dynamically with other modules is making
+a combined work based on Beacon Simulator. Thus, the terms and conditions of
+the GNU General Public License cover the whole combination.
+
+As a special exception, the copyright holders of Beacon Simulator give you
+permission to combine Beacon Simulator program with free software programs
+or libraries that are released under the GNU LGPL and with independent
+modules that communicate with Beacon Simulator solely through the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces. You may
+copy and distribute such a system following the terms of the GNU GPL for
+Beacon Simulator and the licenses of the other code concerned, provided that
+you include the source code of that other code when and as the GNU GPL
+requires distribution of source code and provided that you do not modify the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataGenerator and the
+net.alea.beaconsimulator.bluetooth.AdvertiseDataParser interfaces.
+
+The intent of this license exception and interface is to allow Bluetooth low energy
+closed or proprietary advertise data packet structures and contents to be sensibly
+kept closed, while ensuring the GPL is applied. This is done by using an interface
+which only purpose is to generate android.bluetooth.le.AdvertiseData objects.
+
+This exception is an additional permission under section 7 of the GNU General
+Public License, version 3 (“GPLv3”).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <string name="all_save">Sauver</string>
+    <string name="all_cancel">Annuler</string>
+    <string name="action_delete">Effacer</string>
+    <string name="action_clear">Nettoyer</string>
+    <string name="action_screen_on">Garder écran allumé</string>
+    <string name="action_about">Infos sur l\'app</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="action_autodiagnostic">Vérifier capacité de diffusion</string>
+    <string name="simulator_description">Créer, gérer, et activer des beacons Bluetooth Low Energy. Vous pouvez copier des beacons proches en utilisant l\'onglet Scanner.</string>
+    <string name="simulator_caveat">Le nombre maximal de beacons dépend des appareils. Vous pouvez vérifier les fonctionnalités de votre appareil avant de créer un beacon.</string>
+    <string name="scanner_description">Vous pouvez chercher des beacons proches et copier leurs paramètres.</string>
+    <string name="all_no">Non</string>
+    <string name="all_yes">Oui</string>
+    <string name="beacondelete_title">Confirmation de suppression</string>
+    <string name="beacondelete_message">Effacer ce modèle de beacon ?</string>
+    <string name="all_ok">OK</string>
+    <string name="beaconedit_confirmation_message">Sauver avant de quitter ?</string>
+    <string name="beaconedit_confirmation_title">Edition en cours</string>
+    <string name="beaconcopy_askname">Veuillez entrer un nom pour copier ce beacon.</string>
+    <string name="action_edit">Mode édition</string>
+    <string name="all_uuid_generation">Générer un UUID</string>
+    <string name="beaconcreate_choice">Sélectionner un modèle pour créer un nouveau beacon.</string>
+    <string name="card_settings_title">Paramètres de diffusion</string>
+    <string name="edit_error_signed_byte">Entre -128 et 127.</string>
+    <string name="edit_error_uuid">Caractères hexa, taille 32 (36 avec tirets)</string>
+    <string name="item_model_params_ibeacon">UUID : %1$s</string>
+    <string name="item_model_params_ibeacon_sub">Majeur: %1$,d Mineur: %2$,d</string>
+    <string name="all_name">Nom</string>
+    <string name="all_beacon_type">Type du beacon</string>
+    <string name="all_major">Majeur</string>
+    <string name="all_minor">Mineur</string>
+    <string name="all_tx_power">Puissance émission</string>
+    <string name="card_settings_connectable">Connectable</string>
+    <string name="card_settings_tx_power">Puissance de transmission</string>
+    <string name="card_settings_frequency_mode">Mode fréquentiel</string>
+    <string name="main_tab_scanner">Scanner</string>
+    <string name="main_tab_simulator">Simulateur</string>
+    <string name="about_title">Concernant cette app</string>
+    <string name="pref_title">Paramètres</string>
+    <string name="beaconedition_title">Infos du beacon</string>
+    <string name="item_model_params_eddystoneUID">NS : %1$s</string>
+    <string name="item_model_params_eddystoneUID_sub">Instance : %1$s</string>
+    <string name="card_eddystone_uid_generation">Générer un espace de nommage</string>
+    <string name="edit_error_uid_instance">12 char. hex. (6 octets)</string>
+    <string name="edit_error_uid_namespace">20 char. hex. (10 octets)</string>
+    <string name="card_eddystone_uid_namespace">ID d\'espace de nommage</string>
+    <string name="card_eddystone_uid_instance">ID d\'instance</string>
+    <string name="item_model_params_eddystoneURL">URL : %1$s</string>
+    <string name="card_eddystone_url_url">URL à diffuser</string>
+    <string name="edit_error_eddystone_url">URL trop long / mal formé. Doit avoir "http://" ou "https://"</string>
+    <string name="simulator_no_multibroadcast_title">Pas de support pour la diffusion</string>
+    <string name="simulator_no_multibroadcast_message">Hélas, votre périphérique ne supporte pas le mode multi broadcast Bluetooth Low Energy. Vous ne pouvez pas utiliser cette fonctionnalité.</string>
+    <string name="simulator_bluetooth_required">Le Bluetooth est <b>OFF</b>.\n\nVous devez activer le Bluetooth pour simuler un beacon. Merci de cliquer sur le bouton pour l\'activer.</string>
+    <string name="scanpermission_activate">Activer</string>
+    <string name="scanpermission_need_bluetooth">Le Bluetooth est <b>OFF</b>.\n\nVous devez l\'activer pour faire un scan de beacons.</string>
+    <string name="scanpermission_need_location">Le service de localisation est <b>OFF</b>.\n\nDu fait du fonctionnement d\'Android, accéder à ce service est nécessaire pour scanner des beacons, même si votre position GPS n\'est pas utilisée.</string>
+    <string name="notif_action_stop">Arrêter les diffusions</string>
+    <string name="notif_channel_name">Statut</string>
+    <string name="notif_channel_description">Statut de diffusion des beacons.</string>
+    <string name="scanner_scan_start">Scan de beacons en cours…</string>
+    <string name="simulator_askbluetooth">Activer Bluetooth</string>
+    <string name="item_model_params_name">Nom : %1$s</string>
+    <string name="item_model_params_manufacturer">Constructeur : %1$s</string>
+    <string name="advertise_error_already_started">Erreur : diffusion déjà en cours</string>
+    <string name="advertise_error_data_large">Erreur : donnéesà diffuser trop grandes</string>
+    <string name="advertise_error_internal">Erreur interne lors de la diffusion</string>
+    <string name="advertise_error_too_many">Erreur : trop de diffusion en même temps</string>
+    <string name="advertise_error_unknown">Erreur : erreur inconnue</string>
+    <string name="advertise_error_unsupported">Erreur : fonctionnalité non supporté</string>
+    <plurals name="simulator_broadcast_start">
+        <item quantity="one">Début de diffusion, %1$d actif</item>
+        <item quantity="other">Début de diffusion, %1$d actifs</item>
+    </plurals>
+    <plurals name="simulator_broadcast_stop">
+        <item quantity="one">Arrêt de diffusion, %1$d actif</item>
+        <item quantity="other">Arrêt de diffusion, %1$d actifs</item>
+    </plurals>
+    <plurals name="notif_message">
+        <item quantity="one">Diffusion de %1$s beacon</item>
+        <item quantity="other">Diffusion de %1$s beacons</item>
+    </plurals>
+    <string name="card_device_title">Périphérique</string>
+    <string name="card_localname_title">Nom</string>
+    <string name="card_txpower_title">Puissance d\'émission</string>
+    <string name="card_uuid_title">Service UUIDs</string>
+    <string name="card_servicedata_title">Service Data</string>
+    <string name="card_manufacturer_title">Spécifique Constructeur</string>
+    <string name="card_unknown_title">Type inconnu</string>
+    <string name="card_device_has_scanresponse">Réponse étendue :</string>
+    <string name="card_localname_isfull">Nom complet :</string>
+    <string name="card_uuid_service_class">Classe des services :</string>
+    <string name="card_uuid_service_type">Type des services :</string>
+    <string name="card_servicedata_uuid">UUID :</string>
+    <string name="card_unknown_structure_type">Type de structure :</string>
+    <string name="card_unknown_size">Taille :</string>
+    <string name="card_unknown_content">Data :</string>
+    <string name="card_altbeacon_manufacturerid">ID Constructeur :</string>
+    <string name="card_device_bluetoothtype">Type de Bluetooth: %1$s</string>
+    <string name="card_device_mac">MAC : %1$s</string>
+    <string name="card_device_rssi">RSSI : %1$d dBm</string>
+    <string name="card_eddystone_txpower_info">La puissance d\'émission doit être le RSSI (puissance du signal radio Bluetooth) du téléphone mesuré à 0m en dBm, entre -120 dBm et 20 dBm. Elle peut être mesurée à 1m, rajouter alors 41 dBm.</string>
+    <string name="card_ibeacon_txpower_info">La puissance d\'émission doit être le RSSI (puissance du signal radio Bluetooth) du téléphone mesuré à 1m en dBm.</string>
+    <string name="scanner_scan_stop">Arrêt du scan</string>
+    <string name="card_altbeacon_manufacturer_id">ID de fabricant</string>
+    <string name="card_altbeacon_manufacturer_reserved">Réservé au fabricant</string>
+    <string name="edit_error_manufacturer_reserved">2 char. hex.</string>
+    <string name="card_service_type_complete">Complet</string>
+    <string name="card_service_type_incomplete">Incomplet</string>
+    <string name="card_flags_title">Flags</string>
+    <string name="card_flags_limited_discoverable">Découverte limité :</string>
+    <string name="card_flags_classic_unsupported">BR/EDR non supporté :</string>
+    <string name="card_flags_general_discoverable">Découverte générale :</string>
+    <string name="card_flags_simultaneous_controller">Contrôleurs simultanés possibles :</string>
+    <string name="card_flags_simultaneous_host">Hôtes simultanés possibles :</string>
+    <string name="pref_category_locale">Région</string>
+    <string name="pref_key_language">Langue</string>
+    <string name="pref_category_scan">Scan</string>
+    <string name="pref_key_scan_keep_screen_on">Garder l\'écran allumé lors du scan</string>
+    <string name="pref_category_broadcast">Diffusion</string>
+    <string name="pref_key_broadcast_resilience">Diffusion résiliente</string>
+    <string name="pref_summary_broadcast_resilience">La diffusion reprend après un redémarrage d\'Android ou si l\'interface Bluetooth est réactivée.</string>
+    <string name="diagnostic_start_button">Faire l\'analyse</string>
+    <string name="diagnostic_explanation">La possibilité et le nombre de beacons diffusés dépendent de votre appareil. Lancer l\'analyse arrêtera tout beacon en cours de diffusion.\nD\'autres apps utilisant la diffusion de beacons peuvent introduire un biais dans l\'analyse.</string>
+    <string name="diagnostic_error_ble_unsupported">La diffusion Bluetooth Low Energy n\'est pas supportée.</string>
+    <string name="diagnostic_error_bt_off">Le Bluetooth est désactivé.</string>
+    <string name="diagnostic_error_max_tries">Une erreur est certainement apparue, le chiffre calculé étant trop élevé pour être vrai.</string>
+    <string name="diagnostic_error_unexpected">Une erreur est survenue au cours de l\'analyse.</string>
+    <string name="diagnostic_success_message">Nombre maximal de diffusions possibles :</string>
+    <string name="about_rate_button">Noter cette app</string>
+    <string name="about_rate_info">Cette app gratuite est faite sur mon temps libre. Je serai heureux d\'avoir votre retour.</string>
+    <string name="about_licenses_button">Licences Open Source</string>
+    <string name="about_licenses_title">Logiciels Open Source utilisés</string>
+    <string name="action_broadcast_stop">Arrêter les diffusions</string>
+    <string name="all_url_shortener">Minifier</string>
+    <string name="shortener_format_message">Cette URL ne peut pas être minifiée.</string>
+    <string name="shortener_format_title">Problème de format</string>
+    <string name="shortener_network_message">Erreur en essayant de convertir cette URL : %1$s</string>
+    <string name="shortener_network_title">Erreur réseau</string>
+    <string name="card_eddystone_tlm_voltage">Tension - mV</string>
+    <string name="card_eddystone_tlm_temperature">Température - °C</string>
+    <string name="card_eddystone_tlm_advertisingcount">Nombre de trames émises</string>
+    <string name="card_eddystone_tlm_uptime">Uptime en 0.1 secondes</string>
+    <string name="edit_error_unsigned_int">Entre 0 et 4 294 967 295</string>
+    <string name="edit_error_unsigned_short">Entre 0 et 65 535.</string>
+    <string name="item_model_params_eddystoneTLM">Voltage : %1$,dmV Total : %2$,d</string>
+    <string name="item_model_params_eddystoneTLM_sub">Température : %1$,.1f°C Uptime : %2$,.1fs</string>
+    <string name="card_eddystone_eid_idkey_generation">Générer une clef</string>
+    <string name="card_eddystone_eid_counter">Compteur Beacon :</string>
+    <string name="card_eddystone_eid_offset">Décalage du compteur</string>
+    <string name="card_eddystone_eid_identitykey">Clef identité</string>
+    <string name="card_eddystone_eid_rotationexponent">Exposant de rotation</string>
+    <string name="edit_error_signed_int">Entre -2 147 483 648  et 2 147 483 647</string>
+    <string name="edit_error_identity_key_size">32 char. hex.</string>
+    <string name="card_eddystone_eid_current_eid">EID actuel :</string>
+    <string name="card_eddystone_eid_countdown">Changement dans :</string>
+    <string name="card_eddystone_eid_info">L\'identifiant du beacon change en fonction de la clef secrète, la période de changement (exposant de rotation), et d\'un compteur propre au beacon. Ce compteur qui correspond ici au temps présent peut être modifié avec le paramètre de décalage.\n<b>En dessous d\'une période de rotation de 4 secondes, la diffusion ne pourra pas se faire en temps réel.</b></string>
+    <string name="item_model_params_eddystoneEID">Clef : %1$s</string>
+    <string name="item_model_params_eddystoneEID_sub">Periode : %1$s Offset : %2$,d</string>
+    <string name="item_model_params_eddystoneTLM_scan">EID : %1$s</string>
+    <string name="item_model_params_eddystoneTLM_scan_sub_unresolved">Donnée cryptée</string>
+    <string name="item_model_state_resilient">résilient</string>
+</resources>
