@@ -56,7 +56,7 @@ import android.bluetooth.le.AdvertiseData;
  * closed or proprietary advertise data packet structures and contents to be sensibly
  * kept closed, while ensuring the GPL is applied. This is done by using interfaces
  * which only purposes are to generate android.bluetooth.le.AdvertiseData objects or
- * to parse android.bluetooth.le.ScanResult having proprietary format to a usable
+ * to parse android.bluetooth.le.ScanRecord having proprietary format to a usable
  * object.
  *
  * A usage that tries to circumvent the intent of this exception is not allowed.
